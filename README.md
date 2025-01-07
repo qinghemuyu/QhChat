@@ -85,7 +85,7 @@ WebSocket：http://localhost:8080/ws
 ```
 
 ### 🚀 生产环境
-- 🌐 域名：qhchat.qinghe.ink
+- 🌐 域名：你的域名
 - 🔒 HTTPS：SSL 安全加密
 - 🔄 Nginx：反向代理配置
 
