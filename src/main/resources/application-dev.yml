@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  ssl:
+    enabled: false
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  task:
+    scheduling:
+      pool:
+        size: 5
+      thread-name-prefix: scheduled-task-
+      shutdown:
+        await-termination: true
+        await-termination-period: 60s
+
+upload:
+  path: ./uploads/dev 

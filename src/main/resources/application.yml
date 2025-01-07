@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  task:
+    scheduling:
+      pool:
+        size: 5
+      thread-name-prefix: scheduled-task-
+      shutdown:
+        await-termination: true
+        await-termination-period: 60s
+
+upload:
+  path: ./uploads 
